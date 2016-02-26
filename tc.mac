@@ -1,0 +1,29 @@
+L21
+G20
+m18.1 c12     [Is Tool Present]
+L110 t0
+L111 t{t}     [Skip Next Line Current Tool!=New Tool]
+m99
+m5            [Spindle Off]
+g53z	      [Raise Head]	     
+[g54	      
+m17.1 c12     [Run If Tool In Spindle]
+m98 tu.mac    [Run Tool Unload Tool Macro]
+m18 c12       [Wait For No Tool In Spindle]
+L110 t0       [Select No Tool]
+g53 t{t}xy    [Go To Tool Change Position in X & Y]
+g53 t{t}z+3.5 [Go To Tool Change Height in Z plus 3.5"]
+m52           [Release Tool]
+m17c14	      [Wait for Released input]
+g53 t{t}z
+m53           [Clamp Tool]
+g4x1          [Dwell Time To Clamp Tool]
+m17.1 c12     [Is Tool Present]
+L110 t{t}     [Selects New Tool]
+L91g0y-2.5 
+g53 z0
+m18.1 c12     [Is Tool Present]
+l110t0
+L20
+(G23  2016-01-08 GJZ removing this: returning to mm unexpectedly when macro called from inch mode)
+g0

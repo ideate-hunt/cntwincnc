@@ -1,0 +1,26 @@
+[Jog Bit To SPOIL BOARD Table TOP WITH THE VACUUM ON]
+[THIS NEEDS TO BE DONE Before Running This Program]
+[This Should only be done after surfacing the Spoil board]
+G4
+[You are about to change the tool measure switch height]
+[Are you sure you want to calibrate the height of the] 
+[switch to the table top?]
+G4
+[A FLAT BOTTOM END MILL SHOULD BE TOUCHING THE TOP OF THE 
+[SPOIL BOARD WITH THE VACUUM ON]
+[If machine is not at this position, press esc button on 
+[keyboard and jog BIT to TOP OF THE spoil board.
+g4 
+m5
+L21
+l92
+g92
+m37 z0 T{tp1}
+g53 z0
+g53 x{tmx}y{tmy}
+l91 g0 z{tmd}
+l91 g1 z-16 m28 g31 f20
+m37.1z
+g53 z0
+l91 g1 z0 f50
+L20

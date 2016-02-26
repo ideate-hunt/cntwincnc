@@ -1,0 +1,5 @@
+m12C12c14    [SPINDLE OFF]
+m72          [Mister off]
+m64          [DUST OFF]
+l20          [SOFT LIMITS ON]
+s0

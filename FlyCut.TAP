@@ -1,0 +1,100 @@
+[Make sure that the spoilboard cutter is in and measured]
+g4
+[IF THIS IS A NEW SPOIL BOARD TOUCH TOP OF SPOIL BOARD
+[AND CALIBRATE SWITCH FIRST
+G4
+
+g90     [Absolute Mode]
+g92     [Turns off g92]
+m61	[Vacuum on]
+m3      [Spindle on]
+s13500  [Spindle RPM]
+
+g53 x0 y0
+
+f700        [Feed Rate]
+g1 z-.015   [Milling Depth]
+
+g1y196
+g1 x62
+g1 y0
+g1 x2
+
+
+g1y196
+l91 g1 x2
+g1 y-1
+l91 g1 x2
+g1y196
+l91 g1 x2
+g1 y-1
+l91 g1 x2
+g1y196
+l91 g1 x2
+g1 y-1
+
+l91 g1 x2
+g1y196
+l91 g1 x2
+g1 y-1
+l91 g1 x2
+g1y196
+l91 g1 x2
+g1 y-1
+l91 g1 x2
+g1y196
+l91 g1 x2
+g1 y-1
+
+l91 g1 x2
+g1y196
+l91 g1 x2
+g1 y-1
+l91 g1 x2
+g1y196
+l91 g1 x2
+g1 y-1
+l91 g1 x2
+g1y196
+l91 g1 x2
+g1 y-1
+
+l91 g1 x2
+g1y196
+l91 g1 x2
+g1 y-1
+l91 g1 x2
+g1y196
+l91 g1 x2
+g1 y-1
+l91 g1 x2
+g1y196
+l91 g1 x2
+g1 y-1
+
+l91 g1 x2
+g1y196
+l91 g1 x2
+g1 y-1
+l91 g1 x2
+g1y196
+l91 g1 x2
+g1 y-1
+l91 g1 x2
+g1y196
+l91 g1 x2
+g1 y-1
+l91 g1 x1
+g1y196
+
+
+
+
+
+g53z
+m62	[Vacuum off]
+m5
+[Clean off tool touch switch and calibrate Switch]
+[Clean off tool touch switch and calibrate Switch]
+[Clean off tool touch switch and calibrate Switch]
+

@@ -1,0 +1,5 @@
+m12c2      [Manual off]
+m11c12     [SPINDLE ON]
+m12c14     [SPINDLE REV OFF]
+L20        [SOFT LIMITS ON]
+m63        [Dust Boot Down]

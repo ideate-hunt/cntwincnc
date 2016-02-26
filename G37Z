@@ -1,0 +1,12 @@
+G20
+m5
+G49Z
+G53 Z0
+G53 X{tmx}y{tmy} 
+L91 G0 Z{tmd}
+L91 G1 Z-16 M28 F20 G31
+M37 Z{tm1} T{tp1}
+G53 Z0
+L91 G1 Z0 F50
+G23
+g0
