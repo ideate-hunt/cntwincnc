@@ -1,0 +1,32 @@
+# ignore all the WinCNC binaries and application files
+*.exe
+*.EXE
+*.dll
+*.sys
+*.ico
+*.pdf
+*.doc
+install.bat
+/PCI7200_32/
+/PCI7200_64/
+/WinCNC Bitmaps/
+
+# ignore any folders with user data
+/Users/
+
+# ignore some extraneous folders
+/backups/
+/log/
+/Test/
+
+# ignore a variety of other extraneous files
+*~
+CNC.TMP
+CNCSCRN.INI.2015AUG
+CNCSCRN.INI.bak.txt
+cncC097.dat
+cncC097kptest.tad
+d2a.map
+draw.tmp
+dxf.tmp
+startup.log
