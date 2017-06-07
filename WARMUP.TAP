@@ -1,12 +1,8 @@
-[Check for moisture collected in regulator traps]
-[Check all 3 lubricators oil levels 10wt air tool oil]
-[Is area clear to home machine]
-[Does the Main Air regulator read 90-120psi]
-G4
-[Does the air regulator above spindle read 62psi]
-G4
-
-m98 home.mac
+L600     [MAPPING OFF]
+G28xz
+g28y F200
+L601     [MAPPING ON]
+L20
 T1 (TOOL PICK #1)
 g53 x{tmx}y{tmy}
 m3 (SPINDLE ON)
@@ -20,4 +16,11 @@ m5 (SPINDLE OFF)
 t0 (TOOL DROP)
 [*****Machine is ready for use*****]
 [**Run warmup again if it has been idle for 1 hour**]
+[Check for moisture collected in regulator traps]
+[Check all 3 lubricators oil levels 10wt air tool oil]
+[Is area clear to home machine]
+[Does the Main Air regulator read 90-120psi]
+G4
+[Does the air regulator above spindle read 62psi]
+G4
 

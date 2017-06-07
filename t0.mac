@@ -18,5 +18,5 @@ L91 g0 Z3.5   [Retract]
 m53           [Clamp Tool]
 L110 t0       [Sets No Tool]
 L20
-(G23  2016-01-08 GJZ removing this: returning to mm unexpectedly when macro called from inch mode)
+[G23  2016-01-08 GJZ removing this: returning to mm unexpectedly when macro called from inch mode]
 g53z0
